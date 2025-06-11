@@ -12,6 +12,6 @@ export class TodosComponent implements OnInit {
   todoservice = inject(TodosService); // injects the todo service in component
 
   ngOnInit(): void {
-    console.log(this.todoservice.todoItems) // logs the items in console
+    console.log(this.todoservice.todoItems); // logs the items in console
   }
 }
