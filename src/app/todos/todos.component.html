@@ -1,2 +1,7 @@
-<p>todos works!</p>
+<p>Todos component!</p>
 
+<!-- for loop reondering the title from each of the items in the service 
+using todo.id as index -->
+@for (todo of todoItems(); track todo.id) {
+    <p> {{ todo.title }} </p>
+}
