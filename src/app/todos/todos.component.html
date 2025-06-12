@@ -1,7 +1,10 @@
-<p>Todos component!</p>
+<h3>Todo list:</h3>
 
-<!-- for loop reondering the title from each of the items in the service 
-using todo.id as index -->
-@for (todo of todoItems(); track todo.id) {
-    <p> {{ todo.title }} </p>
-}
+<ul class="todos">
+    @for (todo of todoItems(); track todo.id ) {
+        <li class="todos__item">
+            <input id="todo-{{todo.id}}" type="checkbox">
+            <label for="todo-{{todo.id}}">{{ todo.title }}</label>
+        </li>
+    }
+</ul>
